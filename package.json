@@ -2,7 +2,6 @@
   "name": "multifunctional-offline-backend",
   "version": "0.0.1",
   "description": "app with multifunctional offline mode",
-
   "main": "./app/app.js",
   "scripts": {
     "start": "node ./app/app.js",
@@ -25,6 +24,7 @@
     "eslint-config-rallycoding": "^3.2.0",
     "express": "^4.16.3",
     "jsonwebtoken": "^8.2.1",
+    "mongoose": "^5.0.13",
     "passport": "^0.4.0",
     "passport-jwt": "^4.0.0",
     "passport-local": "^1.0.0"
