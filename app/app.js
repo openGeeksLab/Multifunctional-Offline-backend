@@ -1,5 +1,4 @@
 import express from 'express';
-import session from 'express-session'; 
 import bodyParser from 'body-parser';
 import routes from './routes/routes';
 import db from './config/dbConnect';
@@ -11,14 +10,7 @@ const app = express();
 // View engine setup
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(session({
-  secret: 'keyboard cat',
-  resave: false,
-  saveUninitialized: true,
-  cookie: { secure: true }
-}));
-app.disable('x-powered-by');
-app.set('trust proxy', 1);
+
 app.set('view engine', 'pug');
 
 // Routes

@@ -44,7 +44,7 @@ routes.post('/authenticate', (req, res) => {
         res.json({ success: false, message: 'Authentication failed. Wrong password.' });
       } else {
         res.json({
-          token: jwt.sign({ username: user.username, password: user.password }, 'RESTFULAPIs') });
+          token: jwt.sign({ username: user.username, password: user.password }, 'keyboard cat') });
       }
     }
   });
